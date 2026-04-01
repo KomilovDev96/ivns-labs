@@ -1,0 +1,131 @@
+/* ─── DARK THEME (default) ─────────────────────────────────────── */
+:root,
+[data-theme="dark"] {
+  --bg-primary: #050816;
+  --bg-secondary: #0b1120;
+  --bg-card: rgba(11, 17, 32, 0.62);
+  --bg-nav: rgba(5, 8, 22, 0.88);
+
+  --accent-blue: #0ea5e9;
+  --accent-purple: #7c3aed;
+  --accent-blue-dim: rgba(14, 165, 233, 0.12);
+  --accent-purple-dim: rgba(124, 58, 237, 0.12);
+
+  --gradient-btn: linear-gradient(135deg, #0ea5e9 0%, #7c3aed 100%);
+  --gradient-btn-hover: linear-gradient(135deg, #38bdf8 0%, #8b5cf6 100%);
+  --gradient-accent: linear-gradient(135deg, #0ea5e9 0%, #7c3aed 100%);
+
+  --text-primary: #f0f6ff;
+  --text-secondary: #94a3b8;
+  --text-muted: #475569;
+
+  --border-subtle: rgba(14, 165, 233, 0.13);
+  --border-glow: rgba(14, 165, 233, 0.45);
+
+  --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.45);
+  --shadow-btn: 0 4px 22px rgba(14, 165, 233, 0.38);
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+
+  --transition: 0.3s ease;
+  --transition-fast: 0.15s ease;
+
+  --container: 1200px;
+
+  /* ── Adaptive orb colors (dark) ── */
+  --orb-blue:   rgba(14,  165, 233, 0.08);
+  --orb-purple: rgba(124, 58,  237, 0.08);
+  --orb-cyan:   rgba(34,  211, 238, 0.06);
+  --orb-green:  rgba(16,  185, 129, 0.06);
+  --orb-pink:   rgba(236, 72,  153, 0.05);
+
+  /* ── Section backgrounds with mesh gradients (dark) ── */
+  --bg-section-primary:
+    radial-gradient(ellipse 65% 55% at  0%   0%, var(--orb-blue)   0%, transparent 58%),
+    radial-gradient(ellipse 60% 50% at 100% 100%, var(--orb-purple) 0%, transparent 58%),
+    var(--bg-primary);
+
+  --bg-section-secondary:
+    radial-gradient(ellipse 65% 55% at 100%  0%, var(--orb-purple) 0%, transparent 58%),
+    radial-gradient(ellipse 60% 50% at   0% 100%, var(--orb-blue)  0%, transparent 58%),
+    var(--bg-secondary);
+
+  --bg-section-alt:
+    radial-gradient(ellipse 55% 50% at  50%  0%, var(--orb-cyan)   0%, transparent 55%),
+    radial-gradient(ellipse 55% 50% at  50% 100%, var(--orb-purple) 0%, transparent 55%),
+    var(--bg-primary);
+
+  --bg-section-process:
+    radial-gradient(ellipse 60% 50% at 100% 25%, var(--orb-cyan)   0%, transparent 55%),
+    radial-gradient(ellipse 60% 50% at   0% 75%, var(--orb-purple) 0%, transparent 55%),
+    var(--bg-secondary);
+
+  --bg-section-footer:
+    radial-gradient(ellipse 90% 60% at 50% 0%, var(--orb-blue) 0%, transparent 50%),
+    var(--bg-secondary);
+
+  color-scheme: dark;
+}
+
+/* ─── LIGHT THEME ───────────────────────────────────────────────── */
+[data-theme="light"] {
+  --bg-primary:    #f5f9ff;
+  --bg-secondary:  #eef4ff;
+  --bg-card:       rgba(255, 255, 255, 0.88);
+  --bg-nav:        rgba(245, 249, 255, 0.94);
+
+  --accent-blue:   #0284c7;
+  --accent-purple: #6d28d9;
+  --accent-blue-dim:   rgba(2, 132, 199, 0.09);
+  --accent-purple-dim: rgba(109, 40, 217, 0.09);
+
+  --gradient-btn:     linear-gradient(135deg, #0ea5e9 0%, #7c3aed 100%);
+  --gradient-accent:  linear-gradient(135deg, #0ea5e9 0%, #7c3aed 100%);
+
+  --text-primary:   #1a1a2e;
+  --text-secondary: #374151;
+  --text-muted:     #6b7280;
+
+  --border-subtle: rgba(14, 165, 233, 0.14);
+  --border-glow:   rgba(14, 165, 233, 0.40);
+
+  --shadow-card: 0 4px 24px rgba(14, 165, 233, 0.10);
+  --shadow-btn:  0 4px 20px rgba(14, 165, 233, 0.28);
+
+  /* ── Adaptive orb colors (light — slightly warmer/visible) ── */
+  --orb-blue:   rgba(14,  165, 233, 0.10);
+  --orb-purple: rgba(109, 40,  217, 0.08);
+  --orb-cyan:   rgba(14,  165, 233, 0.07);
+  --orb-green:  rgba(16,  185, 129, 0.07);
+  --orb-pink:   rgba(168, 85,  247, 0.06);
+
+  /* ── Section backgrounds with mesh gradients (light) ── */
+  --bg-section-primary:
+    radial-gradient(ellipse 65% 55% at  0%   0%, var(--orb-blue)   0%, transparent 58%),
+    radial-gradient(ellipse 60% 50% at 100% 100%, var(--orb-purple) 0%, transparent 58%),
+    var(--bg-primary);
+
+  --bg-section-secondary:
+    radial-gradient(ellipse 65% 55% at 100%  0%, var(--orb-purple) 0%, transparent 58%),
+    radial-gradient(ellipse 60% 50% at   0% 100%, var(--orb-blue)  0%, transparent 58%),
+    var(--bg-secondary);
+
+  --bg-section-alt:
+    radial-gradient(ellipse 55% 50% at  50%  0%, var(--orb-cyan)   0%, transparent 55%),
+    radial-gradient(ellipse 55% 50% at  50% 100%, var(--orb-purple) 0%, transparent 55%),
+    var(--bg-primary);
+
+  --bg-section-process:
+    radial-gradient(ellipse 60% 50% at 100% 25%, var(--orb-cyan)   0%, transparent 55%),
+    radial-gradient(ellipse 60% 50% at   0% 75%, var(--orb-purple) 0%, transparent 55%),
+    var(--bg-secondary);
+
+  --bg-section-footer:
+    radial-gradient(ellipse 90% 60% at 50% 0%, var(--orb-blue) 0%, transparent 50%),
+    var(--bg-secondary);
+
+  color-scheme: light;
+}

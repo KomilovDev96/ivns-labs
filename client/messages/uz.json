@@ -1,0 +1,124 @@
+{
+  "nav": {
+    "home": "Bosh sahifa",
+    "about": "Biz haqimizda",
+    "services": "Xizmatlar",
+    "products": "Mahsulotlar",
+    "projects": "Loyihalar",
+    "clients": "Mijozlar",
+    "contact": "Aloqa"
+  },
+  "hero": {
+    "title": "IVN Labs",
+    "subtitle": "Innovation Via Neuron",
+    "tagline": "Biz texnologiyalar hayotiy kuch bo'ladigan madaniyat yaratamiz",
+    "cta": "Loyihani boshlash",
+    "learnMore": "Ko'proq bilish"
+  },
+  "about": {
+    "title": "Biz haqimizda",
+    "subtitle": "Biz kimlar",
+    "description": "IVN Labs — bu g'oyalarni innovatsion texnologik yechimlarga aylantiradigan professional jamoadir. Biz dasturiy ta'minot, veb-ilovalar, mobil ilovalar ishlab chiqish va IT sohasida konsalting bilan shug'ullanamiz.",
+    "itpark": "IT Park rezidentlari",
+    "itparkText": "Biz O'zbekiston IT Parkining rasmiy rezidentlarimiz, bu bizning innovatsion texnologik kompaniya maqomimizni tasdiqlaydi.",
+    "mission": "Bizning missiyamiz",
+    "missionText": "Biznesni o'zgartiradigan va odamlarning hayotini yaxshilaydigan texnologik yechimlar yaratish.",
+    "values": "Bizning qadriyatlarimiz",
+    "innovation": "Innovatsiya",
+    "innovationText": "Biz doimo yangi yondashuvlar va texnologiyalarni qidiramiz",
+    "quality": "Sifat",
+    "qualityText": "Har bir loyiha eng yuqori darajada bajariladi",
+    "partnership": "Hamkorlik",
+    "partnershipText": "Biz mijozlar bilan uzoq muddatli munosabatlarni quramiz"
+  },
+  "projects": {
+    "title": "Bizning loyihalarimiz",
+    "subtitle": "Portfolio",
+    "viewProject": "Loyihani ko'rish",
+    "viewAll": "Barcha loyihalarni ko'rish"
+  },
+  "services": {
+    "title": "Bizning xizmatlarimiz",
+    "subtitle": "Biz nimalarni taklif qilamiz",
+    "integration1c": {
+      "title": "1C ni tashqi tizimlar bilan integratsiya qilish",
+      "description": "1C va har qanday xizmatlar o'rtasida ma'lumotlar almashinuvini sozlaymiz: saytlar, CRM, ERP, omborlar, bank tizimlari. Barqaror almashinuv, operatsiyalarni avtomatlashtirish va qo'lda ishlarni bartaraf etishni ta'minlaymiz."
+    },
+    "webDevelopment": {
+      "title": "Saytlar yaratish",
+      "description": "Biznes vazifalari uchun zamonaviy, tez va qulay saytlar yaratamiz — korporativ portallardan tortib mahsulot landing sahifalarigacha. Struktura, dizayn va integratsiyalarni haqiqiy jarayonlarga moslashtiramiz."
+    },
+    "crmDevelopment": {
+      "title": "CRM yaratish",
+      "description": "Kompaniyaning aniq biznes jarayonlariga mos CRM tizimlarini loyihalashtiramiz va yaratamiz, «universal shablon» emas. Sotuvlar, arizalar, hujjatlar va bo'limlar o'rtasidagi o'zaro ta'sirni avtomatlashtiramiz."
+    },
+    "botDevelopment": {
+      "title": "Botlar yaratish",
+      "description": "Arizalar, hisob-kitob, sotuvlar va kompaniyaning ichki jarayonlarini avtomatlashtirish uchun Telegram-botlar yaratamiz. AI-botlar, integratsiyalar, ma'lumotlar bazalari va murakkab mantiq bilan ishlaymiz."
+    },
+    "automation": {
+      "title": "Jarayonlarni avtomatlashtirish",
+      "description": "Biznes jarayonlarini raqamlashtiramiz va optimallashtiramiz, qo'lda operatsiyalarni kamaytiramiz va xatolarni bartaraf etamiz. Xodimlar, bo'limlar va tizimlar o'rtasida uzluksiz ish zanjirlarini quramiz."
+    },
+    "biAnalytics": {
+      "title": "BI Tahlil (Power BI)",
+      "description": "Biznesga shaffoflik va qarorlar uchun ma'lumotlar beradigan dashboard va hisobotlar yaratamiz. 1C, SQL, CRM va har qanday manbalar bilan integratsiya qilamiz, yagona tahlil tizimini shakllantiramiz."
+    },
+    "aiAgents": {
+      "title": "AI Agentlar",
+      "description": "Muloqot, ma'lumotlarni tahlil qilish va rutin vazifalarni bajarishni avtomatlashtirish uchun AI yordamchilari va raqamli agentlarni ishlab chiqamiz."
+    },
+    "bitrix": {
+      "title": "Bitrix24 ni joriy etish",
+      "description": "Bitrix24 ni kompaniyaning biznes jarayonlariga moslashtiramiz va moslashtiramiz: sotuvlar, vazifalar, kommunikatsiyalar va avtomatlashtirish. Vorkalar, integratsiyalar, robotlar, hisobotlar yaratamiz va jamoani tizimda samarali ishlashga o'rgatamiz."
+    }
+  },
+  "products": {
+    "title": "Bizning mahsulotlarimiz",
+    "subtitle": "Biznes uchun yechimlar",
+    "aivanExpert": {
+      "title": "Aivan Expert",
+      "description": "Mebel ishlab chiqaruvchilar uchun mobil ilova"
+    },
+    "rost": {
+      "title": "ROST",
+      "description": "Rost — bu sotuvlar, ombor, moliya va tahlilni bitta platformada birlashtiradigan boshqaruv hisob-kitobi tizimi. U biznes egalari va menejerlarga kompaniya faoliyati haqida aniq ma'lumotlarni olish va tez qarorlar qabul qilish imkonini beradi."
+    }
+  },
+  "clients": {
+    "title": "Bizning mijozlarimiz",
+    "subtitle": "Bizga ishonch bildiradigan kompaniyalar"
+  },
+  "contact": {
+    "title": "Biz bilan bog'laning",
+    "subtitle": "Keling, loyihangizni muhokama qilaylik",
+    "name": "Ism",
+    "email": "Email",
+    "phone": "Telefon",
+    "message": "Xabar",
+    "send": "Yuborish",
+    "sending": "Yuborilmoqda...",
+    "success": "Rahmat! Tez orada siz bilan bog'lanamiz.",
+    "error": "Xatolik yuz berdi. Qayta urinib ko'ring.",
+    "contactInfo": "Aloqa ma'lumotlari",
+    "emailLabel": "Email",
+    "phoneLabel": "Telefon",
+    "addressLabel": "Manzil",
+    "emailValue": "info@ivnlabs.com",
+    "phoneValue": "+998 90 123 45 67",
+    "addressValue": "Toshkent, O'zbekiston"
+  },
+  "footer": {
+    "rights": "Barcha huquqlar himoyalangan",
+    "follow": "Bizni kuzatib boring",
+    "quickLinks": "Tezkor havolalar",
+    "about": "Biz haqimizda",
+    "services": "Xizmatlar",
+    "products": "Mahsulotlar",
+    "projects": "Loyihalar",
+    "clients": "Mijozlar",
+    "contact": "Aloqa",
+    "tagline": "Innovation Via Neuron - Biz texnologiyalar hayotiy kuch bo'ladigan madaniyat yaratamiz",
+    "itpark": "O'zbekiston IT Park rezidentlari"
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "products": "Products",
+    "projects": "Projects",
+    "clients": "Clients",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "IVN Labs",
+    "subtitle": "Innovation Via Neuron",
+    "tagline": "We build a culture where technology is the drive",
+    "cta": "Start Project",
+    "learnMore": "Learn More"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Who We Are",
+    "description": "IVN Labs is a team of professionals who turn ideas into innovative technological solutions. We specialize in software development, web applications, mobile applications, and IT consulting.",
+    "itpark": "IT Park Residents",
+    "itparkText": "We are official residents of IT Park Uzbekistan, which confirms our status as an innovative technology company.",
+    "mission": "Our Mission",
+    "missionText": "To create technological solutions that transform businesses and improve people's lives.",
+    "values": "Our Values",
+    "innovation": "Innovation",
+    "innovationText": "We always seek new approaches and technologies",
+    "quality": "Quality",
+    "qualityText": "Every project is executed at the highest level",
+    "partnership": "Partnership",
+    "partnershipText": "We build long-term relationships with clients"
+  },
+  "projects": {
+    "title": "Our Projects",
+    "subtitle": "Portfolio",
+    "viewProject": "View Project",
+    "viewAll": "View All Projects"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "What We Offer",
+    "integration1c": {
+      "title": "1C Integration with External Systems",
+      "description": "We configure data exchange between 1C and any services: websites, CRM, ERP, warehouses, banking systems. We ensure stable exchange, operation automation, and elimination of manual work."
+    },
+    "webDevelopment": {
+      "title": "Website Development",
+      "description": "We create modern, fast, and user-friendly websites for business needs — from corporate portals to product landing pages. We design structure, design, and integrations for real processes."
+    },
+    "crmDevelopment": {
+      "title": "CRM Development",
+      "description": "We design and create CRM systems tailored to specific company business processes, not a 'universal template'. We automate sales, applications, documents, and interdepartmental interaction."
+    },
+    "botDevelopment": {
+      "title": "Bot Development",
+      "description": "We create Telegram bots for automating applications, accounting, sales, and internal company processes. We work with AI bots, integrations, databases, and complex logic."
+    },
+    "automation": {
+      "title": "Process Automation",
+      "description": "We digitize and optimize business processes, reducing manual operations and eliminating errors. We build end-to-end work chains between employees, departments, and systems."
+    },
+    "biAnalytics": {
+      "title": "BI Analytics (Power BI)",
+      "description": "We create dashboards and reports that provide business transparency and data for decision-making. We integrate with 1C, SQL, CRM, and any sources, forming a unified analytics system."
+    },
+    "aiAgents": {
+      "title": "AI Agents",
+      "description": "We develop AI assistants and digital agents for automating communication, information analysis, and routine task execution."
+    },
+    "bitrix": {
+      "title": "Bitrix Implementation",
+      "description": "We configure and adapt Bitrix24 to company business processes: sales, tasks, communications, and automation. We create funnels, integrations, robots, reports, and train teams for effective system work."
+    }
+  },
+  "products": {
+    "title": "Our Products",
+    "subtitle": "Business Solutions",
+    "aivanExpert": {
+      "title": "Aivan Expert",
+      "description": "Mobile application for furniture manufacturers"
+    },
+    "rost": {
+      "title": "ROST",
+      "description": "Rost is a management accounting system that combines sales, warehouse, finance, and analytics into a single platform. It allows business owners and managers to get accurate data about company activities and make quick decisions."
+    }
+  },
+  "clients": {
+    "title": "Our Clients",
+    "subtitle": "Companies that trust us"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Let's discuss your project",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message",
+    "send": "Send",
+    "sending": "Sending...",
+    "success": "Thank you! We will contact you soon.",
+    "error": "An error occurred. Please try again.",
+    "contactInfo": "Contact Information",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "addressLabel": "Address",
+    "emailValue": "info@ivnlabs.com",
+    "phoneValue": "+998 90 123 45 67",
+    "addressValue": "Tashkent, Uzbekistan"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "follow": "Follow Us",
+    "quickLinks": "Quick Links",
+    "about": "About",
+    "services": "Services",
+    "products": "Products",
+    "projects": "Projects",
+    "clients": "Clients",
+    "contact": "Contact",
+    "tagline": "Innovation Via Neuron - We build a culture where technology is the drive",
+    "itpark": "IT Park Uzbekistan Residents"
+  }
+}
