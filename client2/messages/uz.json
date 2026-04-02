@@ -6,7 +6,8 @@
     "products": "Mahsulotlar",
     "projects": "Loyihalar",
     "process": "Jarayon",
-    "contact": "Aloqa"
+    "contact": "Aloqa",
+    "blog": "Blog"
   },
   "hero": {
     "badge": "IT Park Rezidenti · Toshkent, O'zbekiston",
@@ -314,6 +315,56 @@
       "submit": "Fikr yuborish",
       "successTitle": "Fikringiz uchun rahmat!",
       "successDesc": "Yaqin orada sizning fikringizni ko'rib chiqib, e'lon qilamiz"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Jamoamizdan maqolalar, tushunchalar va yangiliklar",
+    "allCategories": "Barchasi",
+    "tech": "Texnologiyalar",
+    "business": "Biznes",
+    "ai": "AI / ML",
+    "design": "Dizayn",
+    "news": "Yangiliklar",
+    "readMore": "Batafsil o'qish",
+    "backToBlog": "Barcha maqolalar",
+    "shareArticle": "Ulashish",
+    "readTime": "daqiqa o'qish",
+    "moreArticles": "Boshqa maqolalar",
+    "ctaTitle": "Xabardor bo'lishni xohlaysizmi?",
+    "ctaDesc": "Telegramdagi yangilanishlarimizni kuzating",
+    "ctaBtn": "Obuna bo'lish",
+    "items": {
+      "ai-agents-business": {
+        "title": "Biznes uchun AI-agentlar: rutinani qanday avtomatlashtirish mumkin",
+        "excerpt": "LLM asosidagi AI-agentlar kompaniyalarga jarayonlarni avtomatlashtirish va resurslarni tejashga qanday yordam beradi.",
+        "content": "Sun'iy intellekt endi kelajak texnologiyasi emas — bugun AI-agentlar biznesga kundalik vazifalarni hal qilishda faol yordam bermoqda.\n\n## AI-agent nima?\n\nAI-agent — bu katta til modeli (LLM) asosidagi dastur bo'lib, vazifalarni mustaqil bajarishi mumkin.\n\n## Qo'llash misollari\n\n**HR-avtomatlashtirish** — bot rezyumelarni skrining qiladi va nomzodlar ro'yxatini tuzadi.\n\n**Mijozlarga xizmat** — AI-agent operatorsiz 80% gacha murojatlarni qayta ishlaydi.\n\n**Analitika** — agent turli manbalardan ma'lumotlarni avtomatik yig'adi va hisobotlar tuzadi.\n\nIVN Labs kompaniyalarga AI-agentlarni joriy etishga yordam beradi."
+      },
+      "nextjs-performance": {
+        "title": "Next.js samaradorligini optimallashtirish: to'liq qo'llanma",
+        "excerpt": "Next.js ilovalarini tezlashtirish uchun 10 ta amaliy maslahat.",
+        "content": "Next.js React dasturlash uchun standartga aylandi, lekin to'g'ri optimallashtirishsiz sekin ishlashi mumkin.\n\n## 1. Server Components\n\nApp Router da barcha komponentlar sukut bo'yicha serverda ishlaydi.\n\n## 2. Dinamik importlar\n\nOg'ir kutubxonalarni `dynamic()` orqali yuklang.\n\n## 3. Rasm optimallash\n\nHar doim `next/image` foydalaning.\n\nBizning jamoamiz yuqori samarali Next.js ilovalariga ixtisoslashgan."
+      },
+      "crm-mistakes": {
+        "title": "CRM joriy etishda millionlarga tushadigan 5 ta xato",
+        "excerpt": "Nima uchun CRM loyihalarining 60% muvaffaqiyatsizlikka uchraydi.",
+        "content": "Statistikaga ko'ra, CRM joriy etish loyihalarining 60% dan ortig'i maqsadlariga erisha olmaydi.\n\n## Xato 1: CRM CRM uchun\n\nKompaniyalar qaysi jarayonlarni avtomatlashtirishni aniq tushunmay tizim sotib oladi.\n\n## Xato 2: Foydalanuvchilarni e'tiborsiz qoldirish\n\nCRM rahbariyat tomonidan yakuniy foydalanuvchilarsiz tanlanadi.\n\n## Xato 3: Tartibsizlikni avtomatlashtirish\n\nAgar jarayonlar rasmiylashtirilmagan bo'lsa, CRM ularni saqlamaydi.\n\nIVN Labs da biz haqiqatan ishlaydigan CRM larga ixtisoslashganmiz."
+      },
+      "telegram-bots-2024": {
+        "title": "2024 yildagi Telegram-bot trendlari",
+        "excerpt": "Mini Apps, AI integratsiyalar, to'lovlar — Telegram bot ishlab chiqish trendlari.",
+        "content": "Telegram Markaziy Osiyoda biznes uchun asosiy messenjer bo'lib qolmoqda.\n\n## Mini Apps\n\nTelegram Mini Apps messenjer ichida to'liq veb-ilovalar yaratishga imkon beradi.\n\n## AI-powered botlar\n\nGPT va boshqa LLM bilan integratsiya botlarni haqiqatan aqlli qiladi.\n\n## Stars orqali to'lovlar\n\nTelegram Stars yangi monetizatsiya imkoniyatlarini ochadi.\n\nBiz o'nlab biznes botlarini ishlab chiqqanmiz."
+      },
+      "design-system": {
+        "title": "Mahsulotlar uchun dizayn tizimlarini qanday quramiz",
+        "excerpt": "Masshtablanadigan dizayn tizimlarini yaratish tajribamiz.",
+        "content": "Dizayn tizimi — bu Figma dagi tugmalar to'plami emas, bu ishlab chiqishni tezlashtiradigan va izchillikni ta'minlaydigan jonli vosita.\n\n## Nega dizayn tizimi kerak?\n\n- Ishlab chiqishni 2-3 barobar tezlashtiradi\n- Yagona uslubni ta'minlaydi\n\n## Bizning yondashuvimiz\n\n### 1. Dizayn tokenlari\n- Ranglar, tipografiya, bo'shliqlar\n\n### 2. Komponent arxitekturasi\n- Atomik dizayn\n\nHar bir mahsulotimiz dizayn tizimidan boshlanadi."
+      },
+      "it-park-experience": {
+        "title": "IT Park O'zbekistondagi tajribamiz",
+        "excerpt": "IT Park rezidenti maqomi bizga va mijozlarimizga qanday yordam beradi.",
+        "content": "IVN Labs — IT Park O'zbekistonning rasmiy rezidenti.\n\n## Rezidentlik nima beradi?\n\n### Soliq imtiyozlari\n- 0% daromad solig'i\n- 0% QQS IT-xizmatlar eksportida\n\n### Infratuzilma\n- Zamonaviy ofis maydoni\n- Tezkor internet\n\n### Tarmoqlash\n- 1000+ rezident kompaniyalar\n\nIT Park — bu O'zbekistonda IT-biznes o'sishi uchun ekotizim."
+      }
     }
   },
   "footer": {

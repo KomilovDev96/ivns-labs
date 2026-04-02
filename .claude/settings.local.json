@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "additionalDirectories": [
+      "c:\\Users\\azizbek.ivn\\Desktop\\local\\ivns-labs\\client2\\app\\[locale]\\blog"
+    ],
+    "allow": [
+      "Bash(npx next:*)"
+    ]
+  }
+}

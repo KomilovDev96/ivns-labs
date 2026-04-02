@@ -106,7 +106,7 @@ function ImageZone({ accentColor, accentColor2, image, title }: {
 
 function ProductCard({ label, title, desc, features, cta, accentColor, accentColor2, image, reverse, animVariant, href }: ProductCardProps) {
   return (
-    <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={animVariant}
+    <motion.div className="product-card" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={animVariant}
       style={{
         display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3.5rem', alignItems: 'center',
         padding: '3rem', borderRadius: 'var(--radius-xl)', border: '1px solid var(--border-subtle)',
@@ -175,7 +175,7 @@ export default function Products() {
 
       <style>{`
         @media (max-width: 768px) {
-          #products [style*="grid-template-columns: 1fr 1fr"] {
+          .product-card {
             grid-template-columns: 1fr !important;
             direction: ltr !important;
             gap: 2rem !important;

@@ -4,12 +4,10 @@ import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { fadeUp } from '@/lib/animations';
 
-const CL = 'https://logo.clearbit.com/';
-
 const CLIENTS = [
-  { id: 'eman',    name: 'EMAN',           logo: `${CL}eman.uz`,  color: '#0ea5e9', color2: '#7c3aed', href: '' },
-  { id: 'emanmat', name: 'EMAN Materials', logo: `${CL}eman.uz`,  color: '#10b981', color2: '#0ea5e9', href: '' },
-  { id: 'dafna',   name: 'Dafna',          logo: `${CL}dafna.uz`, color: '#a855f7', color2: '#ec4899', href: '' },
+  { id: 'eman',    name: 'EMAN',           logo: '/images/clients/eman.png',    color: '#0ea5e9', color2: '#7c3aed', href: '' },
+  { id: 'emanmat', name: 'EMAN Materials', logo: '/images/clients/eman.png',    color: '#10b981', color2: '#0ea5e9', href: '' },
+  { id: 'dafna',   name: 'Dafna',          logo: '/images/clients/dafna.png',   color: '#a855f7', color2: '#ec4899', href: '' },
 ];
 
 // 8 copies per half → seamless 50% loop, plenty of cards to fill any screen

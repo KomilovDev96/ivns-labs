@@ -6,7 +6,8 @@
     "products": "Products",
     "projects": "Projects",
     "process": "Process",
-    "contact": "Contact"
+    "contact": "Contact",
+    "blog": "Blog"
   },
   "hero": {
     "badge": "IT Park Resident · Tashkent, Uzbekistan",
@@ -314,6 +315,56 @@
       "submit": "Submit Review",
       "successTitle": "Thank you for your review!",
       "successDesc": "We'll review and publish it shortly"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Articles, insights and news from our team",
+    "allCategories": "All",
+    "tech": "Technology",
+    "business": "Business",
+    "ai": "AI / ML",
+    "design": "Design",
+    "news": "News",
+    "readMore": "Read more",
+    "backToBlog": "All articles",
+    "shareArticle": "Share",
+    "readTime": "min read",
+    "moreArticles": "More articles",
+    "ctaTitle": "Want to stay updated?",
+    "ctaDesc": "Follow our updates on Telegram",
+    "ctaBtn": "Subscribe",
+    "items": {
+      "ai-agents-business": {
+        "title": "AI Agents for Business: Automating the Routine",
+        "excerpt": "How LLM-based AI agents help companies automate processes and save resources.",
+        "content": "Artificial intelligence is no longer a technology of the future — today AI agents actively help businesses solve everyday tasks. From automatic request processing to intelligent data analysis — companies are increasingly adopting AI solutions.\n\n## What is an AI Agent?\n\nAn AI agent is a program based on a large language model (LLM) that can independently perform tasks: answer customer questions, analyze documents, generate reports, and even make decisions within given rules.\n\n## Use Cases\n\n**HR Automation** — the bot screens resumes, conducts initial interviews, and creates candidate shortlists. Our project for Ucell reduced application processing time from 3 days to 4 hours.\n\n**Customer Service** — an AI agent handles up to 80% of typical requests without operator involvement, learning from ticket history.\n\n**Analytics** — the agent automatically collects data from various sources, finds anomalies, and generates daily reports.\n\n## How to Get Started?\n\n1. Identify processes with high routine volume\n2. Assess the quality of existing data\n3. Choose a pilot project with measurable results\n4. Start with an MVP and iterate\n\nAt IVN Labs, we help companies implement AI agents — from consultation to production-ready solutions."
+      },
+      "nextjs-performance": {
+        "title": "Next.js Performance Optimization: Complete Guide",
+        "excerpt": "10 practical tips for speeding up Next.js apps: from server components to smart caching.",
+        "content": "Next.js has become the standard for React development, but without proper optimization even a powerful framework can run slowly. We share experience from real projects.\n\n## 1. Server Components by Default\n\nIn App Router, all components are server-side by default. Use `'use client'` only when you truly need interactivity.\n\n## 2. Dynamic Imports\n\nLoad heavy libraries (charts, 3D, editors) via `dynamic()` with `ssr: false`.\n\n## 3. Image Optimization\n\nAlways use `next/image` — automatic WebP, lazy loading and responsive sizes.\n\n## 4. Route Segments\n\nUse `loading.tsx` and `Suspense` for parallel data loading.\n\n## 5. Caching\n\nNext.js caches fetch requests on the server. Control via `revalidate` and `cache: 'no-store'`.\n\n## 6. Bundle Analysis\n\nRegularly check your bundle with `@next/bundle-analyzer` — find and eliminate heavy dependencies.\n\n## 7. Font Optimization\n\nUse `next/font` for automatic self-hosting of fonts without CLS.\n\n## 8. Middleware\n\nMinimize logic in middleware — it runs on every request.\n\n## 9. Edge Runtime\n\nFor API routes with simple logic, use Edge Runtime — faster and cheaper.\n\n## 10. Monitoring\n\nImplement Web Vitals monitoring via `reportWebVitals` to track real performance.\n\nOur team specializes in high-performance Next.js applications — contact us for an audit."
+      },
+      "crm-mistakes": {
+        "title": "5 CRM Implementation Mistakes That Cost Millions",
+        "excerpt": "Why 60% of CRM projects fail and how to avoid typical implementation mistakes.",
+        "content": "Statistics show that over 60% of CRM implementation projects fail to achieve their goals. Let's break down the main mistakes we see in our clients.\n\n## Mistake 1: CRM for CRM's Sake\n\nCompanies buy a system because \"everyone has one\" without clearly understanding which processes need automation. The result — an expensive address book.\n\n**How to avoid:** start with a business process audit and define 3-5 key metrics the CRM should improve.\n\n## Mistake 2: Ignoring Users\n\nCRM is chosen by management without involving end users. Managers sabotage the system, returning to Excel.\n\n**How to avoid:** involve future users in selection and setup from day one.\n\n## Mistake 3: Trying to Automate Chaos\n\nIf processes aren't formalized, CRM won't save them. Automating chaos produces automated chaos.\n\n**How to avoid:** first describe and optimize processes, then automate.\n\n## Mistake 4: Big Bang Instead of Phased Rollout\n\nLaunching all modules simultaneously is guaranteed stress and failure.\n\n**How to avoid:** start with one department or process, achieve results, then scale.\n\n## Mistake 5: No Integrations\n\nA CRM not connected to 1C, telephony, and email is an isolated island.\n\n**How to avoid:** plan integrations from day one. APIs and webhooks are your best friends.\n\nAt IVN Labs, we specialize in CRMs that actually work. Contact us for a consultation."
+      },
+      "telegram-bots-2024": {
+        "title": "Telegram Bot Trends in 2024: What Works",
+        "excerpt": "Mini Apps, AI integrations, payments — breaking down current Telegram bot development trends.",
+        "content": "Telegram remains the main business messenger in Central Asia. Here's what we see in bot development trends.\n\n## Mini Apps — The New Standard\n\nTelegram Mini Apps allow creating full-fledged web applications inside the messenger. Perfect for:\n- Catalogs and stores\n- Forms and surveys\n- Dashboards and analytics\n\n## AI-Powered Bots\n\nIntegration with GPT and other LLMs makes bots truly smart:\n- Understanding conversation context\n- Generating personalized responses\n- Working with documents and images\n\n## Payments via Stars\n\nTelegram Stars open new monetization opportunities:\n- Digital goods and subscriptions\n- Content micropayments\n- Donations and support\n\n## Business Automation\n\nThe most demanded scenario:\n- Receiving and processing applications\n- Notifications and alerts\n- CRM and 1C integration\n- HR automation\n\n## 2024 Stack\n\nOur recommended stack:\n- **Python** + aiogram/python-telegram-bot\n- **PostgreSQL** for storage\n- **Redis** for cache and states\n- **Docker** for deployment\n\nWe've built dozens of business bots — from simple notifiers to AI assistants with 10K+ users."
+      },
+      "design-system": {
+        "title": "How We Build Design Systems for Products",
+        "excerpt": "Experience building scalable design systems: from tokens to component libraries.",
+        "content": "A design system is not a set of buttons in Figma — it's a living tool that accelerates development and ensures consistency.\n\n## Why a Design System?\n\n- Speeds up development 2-3x\n- Ensures unified style\n- Simplifies onboarding new developers\n- Reduces UI bugs\n\n## Our Approach\n\n### 1. Design Tokens\n\nEverything starts with tokens: colors, typography, spacing, radii, shadows. We use CSS Custom Properties for theme support.\n\n### 2. Component Architecture\n\nAtomic design: atoms → molecules → organisms → templates → pages.\n\n### 3. Dark and Light Themes\n\nTheme support from day one via CSS variables and `data-theme` attribute.\n\n### 4. Responsive Design\n\nMobile-first approach with smooth adaptation.\n\n### 5. Animations\n\nFramer Motion for product animations respecting `prefers-reduced-motion`.\n\n## Tools\n\n- **Figma** — design and prototyping\n- **Storybook** — component documentation\n- **CSS Custom Properties** — tokens\n- **Framer Motion** — animations\n\nEvery product we build starts with a design system — it's an investment that pays off in the very first sprint."
+      },
+      "it-park-experience": {
+        "title": "Our Experience at IT Park Uzbekistan",
+        "excerpt": "How IT Park resident status helps us and our clients: tax benefits, networking, and growth.",
+        "content": "IVN Labs is an official resident of IT Park Uzbekistan. We share our experience and advantages.\n\n## What Does Residency Offer?\n\n### Tax Benefits\n- 0% income tax\n- 0% VAT on IT service exports\n- 7.5% unified social payment (instead of standard 12%)\n\n### Infrastructure\n- Modern office spaces\n- High-speed internet\n- Conference rooms and meeting zones\n\n### Networking\n- 1000+ resident companies\n- Regular meetups and hackathons\n- Access to mentors and investors\n\n## How to Become a Resident?\n\n1. Submit an application on the IT Park website\n2. Describe your project and business plan\n3. Pass commission review (2-4 weeks)\n4. Receive resident status\n\n## Our Experience\n\nResidency helped us:\n- Reduce costs by 30%\n- Attract major clients\n- Enter international markets\n- Hire top specialists\n\nIT Park is not just a coworking space — it's an ecosystem for IT business growth in Uzbekistan. If you're an IT company, we strongly recommend applying."
+      }
     }
   },
   "footer": {

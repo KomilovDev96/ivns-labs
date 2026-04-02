@@ -69,6 +69,7 @@ export default function Navbar() {
     { href: anchor('#products'), label: t('products') },
     { href: anchor('#projects'), label: t('projects') },
     { href: anchor('#process'),  label: t('process') },
+    { href: `/${locale}/blog`,   label: t('blog') },
     { href: anchor('#contact'),  label: t('contact') },
   ];
 

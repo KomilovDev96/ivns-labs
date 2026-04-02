@@ -70,26 +70,48 @@ export default function Hero() {
             </span>
           </motion.div>
 
-          {/* Title */}
+          {/* IVN Labs — big title */}
           <motion.h1 variants={fadeUp} style={{
             fontFamily: "'Space Grotesk', sans-serif",
-            fontSize: 'clamp(2.4rem, 6vw, 5rem)',
-            fontWeight: 800, lineHeight: 1.1, letterSpacing: '-0.02em',
-            color: 'var(--text-primary)',
+            fontSize: 'clamp(3.5rem, 8vw, 7rem)',
+            fontWeight: 900, lineHeight: 1, letterSpacing: '-0.02em',
           }}>
-            {t('title')}{' '}
             <span style={{
               background: 'var(--gradient-accent)',
               WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
             }}>
-              {t('titleAccent')}
-            </span>
+              IVN
+            </span>{' '}
+            <span style={{ color: 'var(--text-primary)' }}>Labs</span>
           </motion.h1>
 
-          {/* Subtitle */}
+          {/* Innovation Via Neuron */}
+          <motion.div variants={fadeUp} style={{
+            fontFamily: "'Space Grotesk', sans-serif",
+            fontSize: 'clamp(1.5rem, 3vw, 2.5rem)',
+            fontWeight: 700,
+            color: isLight ? '#1a1a2e' : '#f0f6ff',
+            letterSpacing: '0.04em',
+          }}>
+            Innovation Via Neuron
+          </motion.div>
+
+          {/* Tagline */}
           <motion.p variants={fadeUp} style={{
-            fontSize: 'clamp(1rem, 2vw, 1.15rem)',
-            color: 'var(--text-secondary)', lineHeight: 1.75, maxWidth: 620,
+            fontSize: 'clamp(1.1rem, 2.2vw, 1.6rem)',
+            color: isLight ? '#374151' : 'rgba(240,246,255,0.75)',
+            fontStyle: 'italic',
+          
+          }}>
+            Мы строим культуру, где технологии — это драйв
+          </motion.p>
+
+          {/* Description */}
+          <motion.p variants={fadeUp} style={{
+            fontSize: 'clamp(0.9rem, 1.8vw, 1.05rem)',
+            color: 'var(--text-secondary)',
+            lineHeight: 1.75,
+            maxWidth: 620,
           }}>
             {t('subtitle')}
           </motion.p>
