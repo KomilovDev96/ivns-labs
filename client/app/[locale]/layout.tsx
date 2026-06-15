@@ -1,36 +1,42 @@
-import {NextIntlClientProvider} from 'next-intl';
-import {getMessages} from 'next-intl/server';
-import {notFound} from 'next/navigation';
-import {routingConfig} from '@/routing';
-import '../globals.css';
+import Script from 'next/script';
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages, setRequestLocale } from 'next-intl/server';
+import { notFound } from 'next/navigation';
+import { routing } from '@/routing';
+import { ThemeSync } from '@/lib/ThemeSync';
+import Preloader from '@/components/Preloader';
+import { ContentProvider } from '@/lib/ContentContext';
+
+type Props = {
+  children: React.ReactNode;
+  params: { locale: string };
+};
 
 export function generateStaticParams() {
-  return routingConfig.locales.map((locale) => ({locale}));
+  return routing.locales.map((locale) => ({ locale }));
 }
 
-export default async function LocaleLayout({
-  children,
-  params: {locale}
-}: {
-  children: React.ReactNode;
-  params: {locale: string};
-}) {
-  if (!routingConfig.locales.includes(locale as any)) {
-    notFound();
-  }
-
+export default async function LocaleLayout({ children, params: { locale } }: Props) {
+  if (!routing.locales.includes(locale as any)) notFound();
+  setRequestLocale(locale);
   const messages = await getMessages();
-
   return (
-    <html lang={locale} className="scroll-smooth">
-      <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>IVN Labs - Innovation Via Neuron</title>
-        <meta name="description" content="Мы строим культуру, где технологии это драйв" />
-      </head>
-      <body className="antialiased">
+    <html lang={locale} data-theme="dark" suppressHydrationWarning>
+      <head />
+      <body suppressHydrationWarning>
+        <Script id="theme-init" strategy="beforeInteractive">{`
+          try{
+            var t=localStorage.getItem('ivnlabs-theme');
+            if(!t){t=window.matchMedia('(prefers-color-scheme:light)').matches?'light':'dark';}
+            document.documentElement.setAttribute('data-theme',t);
+          }catch(e){}
+        `}</Script>
         <NextIntlClientProvider messages={messages}>
-          {children}
+          <ContentProvider>
+            <ThemeSync />
+            <Preloader />
+            {children}
+          </ContentProvider>
         </NextIntlClientProvider>
       </body>
     </html>

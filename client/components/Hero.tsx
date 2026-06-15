@@ -1,114 +1,187 @@
 'use client';
+import dynamic from 'next/dynamic';
+import { useTranslations, useLocale } from 'next-intl';
+import { motion } from 'framer-motion';
+import { fadeUp, stagger } from '@/lib/animations';
+import { useTheme } from '@/lib/useTheme';
+import { useSectionT } from '@/lib/useT';
 
-import {useTranslations} from 'next-intl';
-import {motion} from 'framer-motion';
-import {FiArrowDown} from 'react-icons/fi';
+const Scene3D = dynamic(() => import('./Scene3D'), { ssr: false });
 
 export default function Hero() {
-  const t = useTranslations('hero');
-
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    element?.scrollIntoView({behavior: 'smooth'});
-  };
+  const tBase = useTranslations('hero');
+  const locale = useLocale();
+  const t = useSectionT('hero', tBase, locale);
+  const { theme } = useTheme();
+  const isLight = theme === 'light';
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary-50 via-white to-primary-100">
-      {/* Animated background elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <motion.div
-          animate={{
-            scale: [1, 1.2, 1],
-            rotate: [0, 90, 0],
-          }}
-          transition={{
-            duration: 20,
-            repeat: Infinity,
-            ease: 'linear',
-          }}
-          className="absolute top-20 left-10 w-72 h-72 bg-primary-200 rounded-full mix-blend-multiply filter blur-xl opacity-30"
-        />
-        <motion.div
-          animate={{
-            scale: [1, 1.3, 1],
-            rotate: [0, -90, 0],
-          }}
-          transition={{
-            duration: 25,
-            repeat: Infinity,
-            ease: 'linear',
-          }}
-          className="absolute bottom-20 right-10 w-96 h-96 bg-primary-300 rounded-full mix-blend-multiply filter blur-xl opacity-30"
-        />
+    <section
+      className="hero-section"
+      style={{
+        position: 'relative',
+        minHeight: '100vh',
+        display: 'flex',
+        alignItems: 'center',
+        overflow: 'hidden',
+        // Light mode: airy brand sky — pale sky-blue → white → soft lavender
+        background: isLight
+          ? 'linear-gradient(150deg, #e8f4ff 0%, #f4f8ff 35%, #fafbff 60%, #f0eaff 100%)'
+          : 'transparent',
+        transition: 'background 0.4s ease',
+      }}
+    >
+      {/* 3D canvas */}
+      <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
+        <Scene3D theme={theme} />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      {/* Overlay: dark mode — deep space vignette; light mode — hidden */}
+      {!isLight && (
+        <div style={{
+          position: 'absolute', inset: 0, zIndex: 1, pointerEvents: 'none',
+          background: 'radial-gradient(ellipse at center, rgba(5,8,22,0.20) 0%, rgba(5,8,22,0.56) 100%)',
+        }} />
+      )}
+
+      {/* Content */}
+      <div style={{
+        position: 'relative', zIndex: 2,
+        width: '100%', maxWidth: 'var(--container)',
+        margin: '0 auto', padding: '8rem 1.5rem 4rem',
+      }}>
         <motion.div
-          initial={{opacity: 0, y: 30}}
-          animate={{opacity: 1, y: 0}}
-          transition={{duration: 0.8}}
+          variants={stagger} initial="hidden" animate="visible"
+          style={{ maxWidth: 780, display: 'flex', flexDirection: 'column', gap: '1.5rem' }}
         >
-          <motion.h1
-            initial={{opacity: 0, scale: 0.9}}
-            animate={{opacity: 1, scale: 1}}
-            transition={{duration: 0.8, delay: 0.2}}
-            className="text-6xl md:text-8xl font-bold mb-4 bg-gradient-to-r from-primary-600 via-primary-500 to-primary-400 bg-clip-text text-transparent"
-          >
-            {t('title')}
+          {/* Badge */}
+          <motion.div variants={fadeUp}>
+            <span style={{
+              display: 'inline-flex', alignItems: 'center', gap: '0.5rem',
+              background: isLight ? 'rgba(14,165,233,0.1)' : 'rgba(14,165,233,0.1)',
+              border: `1px solid ${isLight ? 'rgba(2,132,199,0.35)' : 'rgba(14,165,233,0.3)'}`,
+              borderRadius: 100, padding: '0.35rem 1rem',
+              fontSize: '0.82rem',
+              color: isLight ? '#0284c7' : '#7dd3fc',
+            }}>
+              <span style={{
+                width: 6, height: 6, borderRadius: '50%',
+                background: isLight ? '#0284c7' : '#0ea5e9',
+                animation: 'pulse 2s infinite', display: 'inline-block',
+              }} />
+              {t('badge')}
+            </span>
+          </motion.div>
+
+          {/* IVN Labs — big title */}
+          <motion.h1 variants={fadeUp} style={{
+            fontFamily: "'Space Grotesk', sans-serif",
+            fontSize: 'clamp(3.5rem, 8vw, 7rem)',
+            fontWeight: 900, lineHeight: 1, letterSpacing: '-0.02em',
+          }}>
+            <span style={{
+              background: 'var(--gradient-accent)',
+              WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
+            }}>
+              IVN
+            </span>{' '}
+            <span style={{ color: 'var(--text-primary)' }}>Labs</span>
           </motion.h1>
 
-          <motion.p
-            initial={{opacity: 0, y: 20}}
-            animate={{opacity: 1, y: 0}}
-            transition={{duration: 0.8, delay: 0.4}}
-            className="text-xl md:text-2xl text-gray-600 mb-2"
-          >
+          {/* Innovation Via Neuron */}
+          <motion.div variants={fadeUp} style={{
+            fontFamily: "'Space Grotesk', sans-serif",
+            fontSize: 'clamp(1.5rem, 3vw, 2.5rem)',
+            fontWeight: 700,
+            color: isLight ? '#1a1a2e' : '#f0f6ff',
+            letterSpacing: '0.04em',
+          }}>
+            Innovation Via Neuron
+          </motion.div>
+
+          {/* Tagline */}
+          <motion.p variants={fadeUp} style={{
+            fontSize: 'clamp(1.1rem, 2.2vw, 1.6rem)',
+            color: isLight ? '#374151' : 'rgba(240,246,255,0.75)',
+            fontStyle: 'italic',
+          
+          }}>
+            Мы строим культуру, где технологии — это драйв
+          </motion.p>
+
+          {/* Description */}
+          <motion.p variants={fadeUp} style={{
+            fontSize: 'clamp(0.9rem, 1.8vw, 1.05rem)',
+            color: 'var(--text-secondary)',
+            lineHeight: 1.75,
+            maxWidth: 620,
+          }}>
             {t('subtitle')}
           </motion.p>
 
-          <motion.p
-            initial={{opacity: 0, y: 20}}
-            animate={{opacity: 1, y: 0}}
-            transition={{duration: 0.8, delay: 0.6}}
-            className="text-lg md:text-xl text-gray-700 mb-12 max-w-3xl mx-auto"
-          >
-            {t('tagline')}
-          </motion.p>
+          {/* CTAs */}
+          <motion.div variants={fadeUp} style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+            <motion.a href="#contact" style={{
+              display: 'inline-flex', alignItems: 'center', gap: '0.5rem',
+              background: 'var(--gradient-btn)', color: '#fff',
+              padding: '0.85rem 2rem', borderRadius: 'var(--radius-md)',
+              fontSize: '1rem', fontWeight: 600,
+              boxShadow: 'var(--shadow-btn)', textDecoration: 'none',
+            }}
+              whileHover={{ scale: 1.04, boxShadow: '0 6px 32px rgba(14,165,233,0.5)' }}
+              whileTap={{ scale: 0.96 }} transition={{ duration: 0.15 }}>
+              {t('ctaPrimary')} →
+            </motion.a>
+            <motion.a href="#projects" style={{
+              display: 'inline-flex', alignItems: 'center', gap: '0.5rem',
+              background: isLight ? 'rgba(14,165,233,0.08)' : 'rgba(255,255,255,0.06)',
+              color: 'var(--text-primary)',
+              padding: '0.85rem 2rem', borderRadius: 'var(--radius-md)',
+              fontSize: '1rem', fontWeight: 600,
+              border: '1px solid var(--border-glow)',
+              backdropFilter: 'blur(10px)', textDecoration: 'none',
+            }}
+              whileHover={{ scale: 1.04, background: 'rgba(14,165,233,0.12)' }}
+              whileTap={{ scale: 0.96 }} transition={{ duration: 0.15 }}>
+              {t('ctaSecondary')}
+            </motion.a>
+          </motion.div>
 
-          <motion.div
-            initial={{opacity: 0, y: 20}}
-            animate={{opacity: 1, y: 0}}
-            transition={{duration: 0.8, delay: 0.8}}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
-          >
-            <motion.button
-              whileHover={{scale: 1.05}}
-              whileTap={{scale: 0.95}}
-              onClick={() => scrollToSection('contact')}
-              className="px-8 py-4 bg-gradient-to-r from-primary-600 to-primary-500 text-white rounded-lg font-semibold text-lg shadow-lg hover:shadow-xl transition-shadow"
-            >
-              {t('cta')}
-            </motion.button>
-
-            <motion.button
-              whileHover={{scale: 1.05}}
-              whileTap={{scale: 0.95}}
-              onClick={() => scrollToSection('about')}
-              className="px-8 py-4 bg-white text-primary-600 rounded-lg font-semibold text-lg border-2 border-primary-600 hover:bg-primary-50 transition-colors"
-            >
-              {t('learnMore')}
-            </motion.button>
+          {/* Stats */}
+          <motion.div variants={fadeUp} style={{
+            display: 'flex', gap: '3rem', paddingTop: '1rem',
+            borderTop: '1px solid var(--border-subtle)', flexWrap: 'wrap',
+          }}>
+            {[
+              [t('stat1Value'), t('stat1Label')],
+              [t('stat2Value'), t('stat2Label')],
+              [t('stat3Value'), t('stat3Label')],
+            ].map(([val, label]) => (
+              <div key={label} style={{ display: 'flex', flexDirection: 'column', gap: '0.15rem' }}>
+                <span style={{
+                  fontFamily: "'Space Grotesk', sans-serif", fontSize: '1.8rem', fontWeight: 700,
+                  background: 'var(--gradient-accent)',
+                  WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
+                }}>{val}</span>
+                <span style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>{label}</span>
+              </div>
+            ))}
           </motion.div>
         </motion.div>
       </div>
 
+      {/* Scroll indicator */}
       <motion.div
-        animate={{y: [0, 10, 0]}}
-        transition={{duration: 2, repeat: Infinity}}
-        className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
-      >
-        <FiArrowDown className="text-primary-600" size={32} />
+        animate={{ y: [0, 8, 0] }} transition={{ repeat: Infinity, duration: 1.5 }}
+        style={{
+          position: 'absolute', bottom: '2rem', left: '50%',
+          transform: 'translateX(-50%)', zIndex: 2,
+          color: 'var(--text-muted)', fontSize: '1.2rem',
+        }}>
+        ↓
       </motion.div>
+
+      <style>{`@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }`}</style>
     </section>
   );
 }

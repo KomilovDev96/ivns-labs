@@ -1,124 +1,387 @@
 {
   "nav": {
-    "home": "Home",
     "about": "About",
+    "team": "Team",
     "services": "Services",
     "products": "Products",
     "projects": "Projects",
-    "clients": "Clients",
-    "contact": "Contact"
+    "process": "Process",
+    "contact": "Contact",
+    "blog": "Blog"
   },
   "hero": {
-    "title": "IVN Labs",
-    "subtitle": "Innovation Via Neuron",
-    "tagline": "We build a culture where technology is the drive",
-    "cta": "Start Project",
-    "learnMore": "Learn More"
+    "badge": "IT Park Resident · Tashkent, Uzbekistan",
+    "title": "Technology that",
+    "titleAccent": "transforms business",
+    "subtitle": "IVN Labs is a team of developers building smart solutions — from AI agents to enterprise platforms. We turn ideas into products.",
+    "ctaPrimary": "Start a Project",
+    "ctaSecondary": "View Cases",
+    "stat1Value": "5+",
+    "stat1Label": "years of experience",
+    "stat2Value": "50+",
+    "stat2Label": "projects",
+    "stat3Value": "20+",
+    "stat3Label": "clients"
   },
   "about": {
+    "label": "Who we are",
     "title": "About Us",
-    "subtitle": "Who We Are",
-    "description": "IVN Labs is a team of professionals who turn ideas into innovative technological solutions. We specialize in software development, web applications, mobile applications, and IT consulting.",
-    "itpark": "IT Park Residents",
-    "itparkText": "We are official residents of IT Park Uzbekistan, which confirms our status as an innovative technology company.",
-    "mission": "Our Mission",
-    "missionText": "To create technological solutions that transform businesses and improve people's lives.",
-    "values": "Our Values",
-    "innovation": "Innovation",
-    "innovationText": "We always seek new approaches and technologies",
-    "quality": "Quality",
-    "qualityText": "Every project is executed at the highest level",
-    "partnership": "Partnership",
-    "partnershipText": "We build long-term relationships with clients"
-  },
-  "projects": {
-    "title": "Our Projects",
-    "subtitle": "Portfolio",
-    "viewProject": "View Project",
-    "viewAll": "View All Projects"
+    "desc1": "IVN Labs is a team of professionals that turns ideas into innovative technological solutions. We specialize in software development, web applications, mobile apps, and IT consulting.",
+    "desc2": "Our approach is to deeply understand the client's business in order to build solutions that truly work. We don't just write code — we build the technological foundation for your business growth.",
+    "val1": "Innovation",
+    "val2": "Reliability",
+    "val3": "Transparency",
+    "val4": "Results",
+    "stat1Val": "5+", "stat1Label": "years in the market",
+    "stat2Val": "20+", "stat2Label": "clients trust us",
+    "stat3Val": "50+", "stat3Label": "successful projects",
+    "stat4Val": "100%", "stat4Label": "official IT Park resident"
   },
   "services": {
     "title": "Our Services",
-    "subtitle": "What We Offer",
-    "integration1c": {
-      "title": "1C Integration with External Systems",
-      "description": "We configure data exchange between 1C and any services: websites, CRM, ERP, warehouses, banking systems. We ensure stable exchange, operation automation, and elimination of manual work."
-    },
-    "webDevelopment": {
-      "title": "Website Development",
-      "description": "We create modern, fast, and user-friendly websites for business needs — from corporate portals to product landing pages. We design structure, design, and integrations for real processes."
-    },
-    "crmDevelopment": {
-      "title": "CRM Development",
-      "description": "We design and create CRM systems tailored to specific company business processes, not a 'universal template'. We automate sales, applications, documents, and interdepartmental interaction."
-    },
-    "botDevelopment": {
-      "title": "Bot Development",
-      "description": "We create Telegram bots for automating applications, accounting, sales, and internal company processes. We work with AI bots, integrations, databases, and complex logic."
-    },
-    "automation": {
-      "title": "Process Automation",
-      "description": "We digitize and optimize business processes, reducing manual operations and eliminating errors. We build end-to-end work chains between employees, departments, and systems."
-    },
-    "biAnalytics": {
-      "title": "BI Analytics (Power BI)",
-      "description": "We create dashboards and reports that provide business transparency and data for decision-making. We integrate with 1C, SQL, CRM, and any sources, forming a unified analytics system."
-    },
-    "aiAgents": {
-      "title": "AI Agents",
-      "description": "We develop AI assistants and digital agents for automating communication, information analysis, and routine task execution."
-    },
-    "bitrix": {
-      "title": "Bitrix Implementation",
-      "description": "We configure and adapt Bitrix24 to company business processes: sales, tasks, communications, and automation. We create funnels, integrations, robots, reports, and train teams for effective system work."
+    "subtitle": "Full-cycle development — from idea to production",
+    "ctaTitle": "Ready to start a project?",
+    "ctaDesc": "Tell us about your task — we'll reply within 24 hours",
+    "ctaBtn": "Contact us",
+    "items": {
+      "integration": { "title": "1C Integration", "desc": "Connect 1C with external systems, automate data exchange and ERP processes." },
+      "web": { "title": "Web Development", "desc": "Corporate portals, landing pages and SaaS platforms with modern UI/UX." },
+      "crm": { "title": "CRM Systems", "desc": "Custom CRM tailored to your business processes." },
+      "bots": { "title": "Telegram Bots", "desc": "Automation bots, AI assistants, API integrations." },
+      "automation": { "title": "Automation", "desc": "Digitize business processes, reduce manual work." },
+      "bi": { "title": "BI Analytics", "desc": "Power BI dashboards and analytical reports for decision-making." },
+      "ai": { "title": "AI Agents", "desc": "Smart assistants and LLM-based agents for your business." },
+      "bitrix": { "title": "Bitrix24", "desc": "Bitrix24 implementation, configuration and integration." }
     }
   },
   "products": {
     "title": "Our Products",
-    "subtitle": "Business Solutions",
-    "aivanExpert": {
+    "subtitle": "Proprietary SaaS solutions for business",
+    "aivan": {
+      "label": "Mobile App",
       "title": "Aivan Expert",
-      "description": "Mobile application for furniture manufacturers"
+      "desc": "AI platform for automating expert assessments and business analysis. Smart assistant for your team.",
+      "feature1": "AI Data Analysis",
+      "feature2": "Expert Reports",
+      "feature3": "Mobile App",
+      "cta": "Learn More",
+      "tagline": "AI assistant for expert decisions",
+      "heroDesc": "Automate analytics, generate professional reports and make data-driven decisions faster than ever.",
+      "s1Val": "98%",  "s1Label": "analysis accuracy",
+      "s2Val": "3×",   "s2Label": "faster reporting",
+      "s3Val": "500+", "s3Label": "ready templates",
+      "f1Title": "AI Data Analysis",    "f1Desc": "Automatically analyzes large volumes of data and identifies key patterns in seconds.",
+      "f2Title": "Expert Reports",      "f2Desc": "Generates structured reports in one click — ready for clients and management.",
+      "f3Title": "Mobile App",          "f3Desc": "Full access to all features from iOS and Android devices at any time.",
+      "f4Title": "API Integration",     "f4Desc": "Connects to your existing systems via REST API with minimal effort.",
+      "f5Title": "Team Collaboration",  "f5Desc": "Real-time collaboration, comments and change history for your team.",
+      "f6Title": "Data Security",       "f6Desc": "Data encryption, role-based access and compliance with international security standards.",
+      "howTitle": "How it works",
+      "h1Title": "Upload your data",  "h1Desc": "Import from Excel, 1C, CRM or connect a data source via API.",
+      "h2Title": "AI analyzes",       "h2Desc": "The algorithm processes data and generates expert conclusions in seconds.",
+      "h3Title": "Get your report",   "h3Desc": "A ready professional report — download as PDF or share via link.",
+      "ctaTitle": "Ready to try Aivan Expert?",
+      "ctaDesc": "Submit a request and get a free personalized demo",
+      "ctaBtn": "Request a Demo"
     },
     "rost": {
-      "title": "ROST",
-      "description": "Rost is a management accounting system that combines sales, warehouse, finance, and analytics into a single platform. It allows business owners and managers to get accurate data about company activities and make quick decisions."
+      "label": "Analytics",
+      "title": "Rost",
+      "desc": "Growth analytics system for small and medium businesses. Track KPIs and manage results.",
+      "feature1": "KPI Dashboard",
+      "feature2": "Forecasting",
+      "feature3": "1C Integration",
+      "cta": "Learn More",
+      "tagline": "Growth analytics for your business",
+      "heroDesc": "Track KPIs, forecast sales and manage company growth based on real data.",
+      "s1Val": "50+",  "s1Label": "real-time metrics",
+      "s2Val": "+34%", "s2Label": "average client growth",
+      "s3Val": "14",   "s3Label": "days free trial",
+      "f1Title": "KPI Dashboard",     "f1Desc": "All key metrics in one dashboard with real-time updates.",
+      "f2Title": "Forecasting",       "f2Desc": "AI models predict sales and trends based on historical data.",
+      "f3Title": "1C Integration",    "f3Desc": "Automatic data synchronization from 1C without manual input.",
+      "f4Title": "Custom Reports",    "f4Desc": "Build reports of any complexity with flexible filters and visualizations.",
+      "f5Title": "Smart Alerts",      "f5Desc": "Get instant notifications when KPIs deviate from planned values.",
+      "f6Title": "Multi-company",     "f6Desc": "Manage multiple companies in one account without switching.",
+      "howTitle": "How it works",
+      "h1Title": "Connect your data",    "h1Desc": "Integrate 1C, CRM or upload Excel — takes no more than 15 minutes.",
+      "h2Title": "Configure metrics",    "h2Desc": "Choose the KPIs you need or create your own — no developers required.",
+      "h3Title": "Track your growth",    "h3Desc": "Daily dashboards, forecasts and alerts keep you on top of your business.",
+      "ctaTitle": "Start tracking growth today",
+      "ctaDesc": "14-day free trial — no credit card required",
+      "ctaBtn": "Try for Free"
     }
   },
-  "clients": {
-    "title": "Our Clients",
-    "subtitle": "Companies that trust us"
+  "projects": {
+    "title": "Our Projects",
+    "subtitle": "Real results for real companies",
+    "backToProjects": "All projects",
+    "challengeLabel": "Challenge",
+    "solutionLabel": "Solution",
+    "resultLabel": "Result",
+    "stackTitle": "Technology Stack",
+    "moreProjects": "More projects",
+    "ctaTitle": "Ready to discuss your project?",
+    "ctaDesc": "Tell us about your task — we'll build a solution for your business",
+    "ctaBtn": "Contact us",
+    "items": {
+      "ecom": {
+        "title": "E-commerce Platform",
+        "desc": "Marketplace with AI recommendations, personalization and built-in analytics for a retail company",
+        "challenge": "The client was losing up to 70% of users at the product selection stage due to an overloaded interface and lack of personalization.",
+        "solution": "We built a marketplace with an AI recommendation engine, smart search and adaptive UI. Integrated behavioral analytics.",
+        "result": "Conversion grew by 340% in the first 3 months. Average time on site increased from 1.2 to 4.8 minutes."
+      },
+      "bank": {
+        "title": "Banking Corporate Portal",
+        "desc": "High-load corporate portal with Central Bank API integration processing millions of transactions",
+        "challenge": "The existing system couldn't handle more than 50K requests per hour and had critical security vulnerabilities.",
+        "solution": "Built a microservice architecture on Java Spring + Kafka. Implemented multi-level protection and Central Bank API integration.",
+        "result": "The system processes 2M+ transactions per day with zero downtime. Response time reduced from 2.3s to 180ms."
+      },
+      "crm": {
+        "title": "Logistics CRM System",
+        "desc": "Order, route and customer management system for a large logistics company",
+        "challenge": "Managers spent 5+ hours daily on manual data entry and coordinating routes between departments.",
+        "solution": "Created a CRM with automatic order distribution, route optimization and a unified workspace.",
+        "result": "Manual work reduced by 60%. Order processing speed tripled. ROI over 6 months — 420%."
+      },
+      "bi": {
+        "title": "Retail BI Dashboard",
+        "desc": "Power BI analytics platform with 50+ real-time metrics for a retail chain",
+        "challenge": "Management made decisions based on monthly Excel reports with a 2-3 week delay.",
+        "solution": "Built a BI platform on Power BI + Python with automatic dashboards and KPI deviation alerts.",
+        "result": "50+ metrics update in real time. Decision-making speed increased 8x. 12% hidden losses identified."
+      },
+      "bot": {
+        "title": "HR Telegram Bot",
+        "desc": "AI bot for automating hiring, onboarding and HR processes with 10K+ employee audience",
+        "challenge": "An HR team of 5 couldn't handle the application flow: 200+ candidates per month, manual document verification.",
+        "solution": "Developed a Telegram bot with AI resume screening, automatic onboarding and HR system integration.",
+        "result": "10K+ active users. Application processing time from 3 days to 4 hours. HR workload reduced by 70%."
+      },
+      "erp": {
+        "title": "ERP Integration 1C + SAP",
+        "desc": "Seamless integration of 1C, SAP and CRM for a manufacturing enterprise with zero data loss",
+        "challenge": "Three disconnected systems (1C, SAP, custom CRM) led to data duplication and reporting errors.",
+        "solution": "Created an integration bus on Python + RabbitMQ with bidirectional synchronization and data integrity monitoring.",
+        "result": "0 data loss since launch. 500K+ records synchronized daily. Reporting became unified and accurate."
+      }
+    }
+  },
+  "team": {
+    "label": "Our Team",
+    "title": "People behind the product",
+    "subtitle": "Professionals who bring ideas to life",
+    "positionLabel": "Position",
+    "skillsLabel": "Skills",
+    "expLabel": "experience",
+    "joinLabel": "Join us",
+    "joinTitle": "Want to work with us?",
+    "joinDesc": "We're always looking for talented developers, designers and analysts",
+    "joinBtn": "Get in touch",
+    "members": {
+      "azizbek": {
+        "name": "Azizbek I.",
+        "position": "Founder & CEO / Fullstack Developer",
+        "type": "Founder",
+        "exp": "5+ years",
+        "skills": "Next.js,Node.js,Python,1C,AI/LLM"
+      },
+      "dev1": {
+        "name": "Jasur K.",
+        "position": "Senior Backend Developer",
+        "type": "Backend",
+        "exp": "4 years",
+        "skills": "Java,Spring Boot,PostgreSQL,Kafka,Docker"
+      },
+      "dev2": {
+        "name": "Sanjar K.",
+        "position": "Frontend Developer",
+        "type": "Frontend",
+        "exp": "3 years",
+        "skills": "React,TypeScript,Next.js,Framer Motion"
+      },
+      "designer": {
+        "name": "Madina R.",
+        "position": "UI/UX Designer",
+        "type": "Design",
+        "exp": "4 years",
+        "skills": "Figma,Prototyping,UX Research,Branding"
+      },
+      "analyst": {
+        "name": "Nodira U.",
+        "position": "BI & Data Analyst",
+        "type": "Analytics",
+        "exp": "3 years",
+        "skills": "Power BI,Python,SQL,Excel,Tableau"
+      },
+      "pm": {
+        "name": "Zafar A.",
+        "position": "Project Manager",
+        "type": "Management",
+        "exp": "5 years",
+        "skills": "Agile,Scrum,Jira,Confluence,Strategy"
+      }
+    }
+  },
+  "process": {
+    "label": "Our Process",
+    "title": "How We Work",
+    "subtitle": "Transparent process from idea to result",
+    "steps": {
+      "discovery": { "title": "Discovery", "desc": "We study the business, audience and goals. Form technical specifications." },
+      "design": { "title": "Design", "desc": "Create UX/UI, prototypes and design system." },
+      "dev": { "title": "Development", "desc": "We write code agile: sprints, reviews, tests." },
+      "launch": { "title": "Launch", "desc": "Deploy, monitoring and post-release support." }
+    }
   },
   "contact": {
-    "title": "Contact Us",
-    "subtitle": "Let's discuss your project",
+    "title": "Start a Project?",
+    "subtitle": "Tell us about your task — we'll respond within 24 hours",
     "name": "Name",
     "email": "Email",
     "phone": "Phone",
     "message": "Message",
-    "send": "Send",
+    "messagePlaceholder": "Describe your task...",
+    "submit": "Send Request",
     "sending": "Sending...",
-    "success": "Thank you! We will contact you soon.",
-    "error": "An error occurred. Please try again.",
-    "contactInfo": "Contact Information",
-    "emailLabel": "Email",
-    "phoneLabel": "Phone",
-    "addressLabel": "Address",
-    "emailValue": "info@ivnlabs.com",
-    "phoneValue": "+998 90 123 45 67",
-    "addressValue": "Tashkent, Uzbekistan"
+    "success": "Request sent! We'll be in touch soon.",
+    "infoEmail": "info@ivnlabs.uz",
+    "infoPhone": "+998 90 000 00 00",
+    "infoAddress": "Tashkent, Uzbekistan, IT Park"
+  },
+  "clients": {
+    "label": "Our Clients",
+    "title": "Trusted by market leaders",
+    "subtitle": "Companies we've successfully worked with",
+    "c1": "clients",
+    "c2": "industries",
+    "c3": "countries"
+  },
+  "testimonials": {
+    "label": "Testimonials",
+    "title": "What clients say",
+    "subtitle": "Real experience working with IVN Labs",
+    "ctaTitle": "Worked with us?",
+    "ctaDesc": "Share your experience — your review helps us grow",
+    "ctaBtn": "Leave a Review",
+    "reviews": {
+      "r1": {
+        "name": "Aziz N.",
+        "position": "CEO, Texnomart",
+        "text": "IVN Labs built our platform from scratch in record time. The team deeply understood our business processes. Conversion tripled in the first 3 months."
+      },
+      "r2": {
+        "name": "Bahrom Y.",
+        "position": "CTO, Kapital Bank",
+        "text": "Exceptional technical expertise. They implemented a microservice architecture that our in-house team couldn't solve in a year. The system now handles 10× more load."
+      },
+      "r3": {
+        "name": "Sanjar M.",
+        "position": "Founder, Media Park",
+        "text": "We came for a CRM and got much more: integrations, automation, BI dashboard. They proactively suggested solutions we hadn't even considered."
+      },
+      "r4": {
+        "name": "Nilufar A.",
+        "position": "HR Director, Ucell",
+        "text": "The Telegram bot automated 70% of our candidate workflow. Application processing time dropped from 3 days to 4 hours. Extremely pleased with the outcome."
+      },
+      "r5": {
+        "name": "Davron K.",
+        "position": "Project Manager, Realsoft",
+        "text": "We've been working with IVN Labs for 2 years and completed 5 projects together. Always on time, transparent communication, and high-quality code every time."
+      },
+      "r6": {
+        "name": "Zafar T.",
+        "position": "CIO, Artel",
+        "text": "Integrating 1C and SAP was our biggest pain point. IVN Labs solved it in 2 months — 500K+ records sync automatically now. Zero data loss since launch."
+      }
+    },
+    "form": {
+      "title": "Leave a Review",
+      "desc": "Share your experience working with IVN Labs",
+      "rating": "Rating",
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "position": "Position",
+      "positionPlaceholder": "Your job title",
+      "company": "Company",
+      "companyPlaceholder": "Company name",
+      "social": "Social Network",
+      "socialLinkPlaceholder": "Link or @username",
+      "text": "Review",
+      "textPlaceholder": "Share your experience...",
+      "submit": "Submit Review",
+      "successTitle": "Thank you for your review!",
+      "successDesc": "We'll review and publish it shortly"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Articles, insights and news from our team",
+    "allCategories": "All",
+    "tech": "Technology",
+    "business": "Business",
+    "ai": "AI / ML",
+    "design": "Design",
+    "news": "News",
+    "readMore": "Read more",
+    "backToBlog": "All articles",
+    "shareArticle": "Share",
+    "readTime": "min read",
+    "moreArticles": "More articles",
+    "ctaTitle": "Want to stay updated?",
+    "ctaDesc": "Follow our updates on Telegram",
+    "ctaBtn": "Subscribe",
+    "items": {
+      "ai-agents-business": {
+        "title": "AI Agents for Business: Automating the Routine",
+        "excerpt": "How LLM-based AI agents help companies automate processes and save resources.",
+        "content": "Artificial intelligence is no longer a technology of the future — today AI agents actively help businesses solve everyday tasks. From automatic request processing to intelligent data analysis — companies are increasingly adopting AI solutions.\n\n## What is an AI Agent?\n\nAn AI agent is a program based on a large language model (LLM) that can independently perform tasks: answer customer questions, analyze documents, generate reports, and even make decisions within given rules.\n\n## Use Cases\n\n**HR Automation** — the bot screens resumes, conducts initial interviews, and creates candidate shortlists. Our project for Ucell reduced application processing time from 3 days to 4 hours.\n\n**Customer Service** — an AI agent handles up to 80% of typical requests without operator involvement, learning from ticket history.\n\n**Analytics** — the agent automatically collects data from various sources, finds anomalies, and generates daily reports.\n\n## How to Get Started?\n\n1. Identify processes with high routine volume\n2. Assess the quality of existing data\n3. Choose a pilot project with measurable results\n4. Start with an MVP and iterate\n\nAt IVN Labs, we help companies implement AI agents — from consultation to production-ready solutions."
+      },
+      "nextjs-performance": {
+        "title": "Next.js Performance Optimization: Complete Guide",
+        "excerpt": "10 practical tips for speeding up Next.js apps: from server components to smart caching.",
+        "content": "Next.js has become the standard for React development, but without proper optimization even a powerful framework can run slowly. We share experience from real projects.\n\n## 1. Server Components by Default\n\nIn App Router, all components are server-side by default. Use `'use client'` only when you truly need interactivity.\n\n## 2. Dynamic Imports\n\nLoad heavy libraries (charts, 3D, editors) via `dynamic()` with `ssr: false`.\n\n## 3. Image Optimization\n\nAlways use `next/image` — automatic WebP, lazy loading and responsive sizes.\n\n## 4. Route Segments\n\nUse `loading.tsx` and `Suspense` for parallel data loading.\n\n## 5. Caching\n\nNext.js caches fetch requests on the server. Control via `revalidate` and `cache: 'no-store'`.\n\n## 6. Bundle Analysis\n\nRegularly check your bundle with `@next/bundle-analyzer` — find and eliminate heavy dependencies.\n\n## 7. Font Optimization\n\nUse `next/font` for automatic self-hosting of fonts without CLS.\n\n## 8. Middleware\n\nMinimize logic in middleware — it runs on every request.\n\n## 9. Edge Runtime\n\nFor API routes with simple logic, use Edge Runtime — faster and cheaper.\n\n## 10. Monitoring\n\nImplement Web Vitals monitoring via `reportWebVitals` to track real performance.\n\nOur team specializes in high-performance Next.js applications — contact us for an audit."
+      },
+      "crm-mistakes": {
+        "title": "5 CRM Implementation Mistakes That Cost Millions",
+        "excerpt": "Why 60% of CRM projects fail and how to avoid typical implementation mistakes.",
+        "content": "Statistics show that over 60% of CRM implementation projects fail to achieve their goals. Let's break down the main mistakes we see in our clients.\n\n## Mistake 1: CRM for CRM's Sake\n\nCompanies buy a system because \"everyone has one\" without clearly understanding which processes need automation. The result — an expensive address book.\n\n**How to avoid:** start with a business process audit and define 3-5 key metrics the CRM should improve.\n\n## Mistake 2: Ignoring Users\n\nCRM is chosen by management without involving end users. Managers sabotage the system, returning to Excel.\n\n**How to avoid:** involve future users in selection and setup from day one.\n\n## Mistake 3: Trying to Automate Chaos\n\nIf processes aren't formalized, CRM won't save them. Automating chaos produces automated chaos.\n\n**How to avoid:** first describe and optimize processes, then automate.\n\n## Mistake 4: Big Bang Instead of Phased Rollout\n\nLaunching all modules simultaneously is guaranteed stress and failure.\n\n**How to avoid:** start with one department or process, achieve results, then scale.\n\n## Mistake 5: No Integrations\n\nA CRM not connected to 1C, telephony, and email is an isolated island.\n\n**How to avoid:** plan integrations from day one. APIs and webhooks are your best friends.\n\nAt IVN Labs, we specialize in CRMs that actually work. Contact us for a consultation."
+      },
+      "telegram-bots-2024": {
+        "title": "Telegram Bot Trends in 2024: What Works",
+        "excerpt": "Mini Apps, AI integrations, payments — breaking down current Telegram bot development trends.",
+        "content": "Telegram remains the main business messenger in Central Asia. Here's what we see in bot development trends.\n\n## Mini Apps — The New Standard\n\nTelegram Mini Apps allow creating full-fledged web applications inside the messenger. Perfect for:\n- Catalogs and stores\n- Forms and surveys\n- Dashboards and analytics\n\n## AI-Powered Bots\n\nIntegration with GPT and other LLMs makes bots truly smart:\n- Understanding conversation context\n- Generating personalized responses\n- Working with documents and images\n\n## Payments via Stars\n\nTelegram Stars open new monetization opportunities:\n- Digital goods and subscriptions\n- Content micropayments\n- Donations and support\n\n## Business Automation\n\nThe most demanded scenario:\n- Receiving and processing applications\n- Notifications and alerts\n- CRM and 1C integration\n- HR automation\n\n## 2024 Stack\n\nOur recommended stack:\n- **Python** + aiogram/python-telegram-bot\n- **PostgreSQL** for storage\n- **Redis** for cache and states\n- **Docker** for deployment\n\nWe've built dozens of business bots — from simple notifiers to AI assistants with 10K+ users."
+      },
+      "design-system": {
+        "title": "How We Build Design Systems for Products",
+        "excerpt": "Experience building scalable design systems: from tokens to component libraries.",
+        "content": "A design system is not a set of buttons in Figma — it's a living tool that accelerates development and ensures consistency.\n\n## Why a Design System?\n\n- Speeds up development 2-3x\n- Ensures unified style\n- Simplifies onboarding new developers\n- Reduces UI bugs\n\n## Our Approach\n\n### 1. Design Tokens\n\nEverything starts with tokens: colors, typography, spacing, radii, shadows. We use CSS Custom Properties for theme support.\n\n### 2. Component Architecture\n\nAtomic design: atoms → molecules → organisms → templates → pages.\n\n### 3. Dark and Light Themes\n\nTheme support from day one via CSS variables and `data-theme` attribute.\n\n### 4. Responsive Design\n\nMobile-first approach with smooth adaptation.\n\n### 5. Animations\n\nFramer Motion for product animations respecting `prefers-reduced-motion`.\n\n## Tools\n\n- **Figma** — design and prototyping\n- **Storybook** — component documentation\n- **CSS Custom Properties** — tokens\n- **Framer Motion** — animations\n\nEvery product we build starts with a design system — it's an investment that pays off in the very first sprint."
+      },
+      "it-park-experience": {
+        "title": "Our Experience at IT Park Uzbekistan",
+        "excerpt": "How IT Park resident status helps us and our clients: tax benefits, networking, and growth.",
+        "content": "IVN Labs is an official resident of IT Park Uzbekistan. We share our experience and advantages.\n\n## What Does Residency Offer?\n\n### Tax Benefits\n- 0% income tax\n- 0% VAT on IT service exports\n- 7.5% unified social payment (instead of standard 12%)\n\n### Infrastructure\n- Modern office spaces\n- High-speed internet\n- Conference rooms and meeting zones\n\n### Networking\n- 1000+ resident companies\n- Regular meetups and hackathons\n- Access to mentors and investors\n\n## How to Become a Resident?\n\n1. Submit an application on the IT Park website\n2. Describe your project and business plan\n3. Pass commission review (2-4 weeks)\n4. Receive resident status\n\n## Our Experience\n\nResidency helped us:\n- Reduce costs by 30%\n- Attract major clients\n- Enter international markets\n- Hire top specialists\n\nIT Park is not just a coworking space — it's an ecosystem for IT business growth in Uzbekistan. If you're an IT company, we strongly recommend applying."
+      }
+    }
   },
   "footer": {
-    "rights": "All rights reserved",
-    "follow": "Follow Us",
-    "quickLinks": "Quick Links",
-    "about": "About",
-    "services": "Services",
-    "products": "Products",
-    "projects": "Projects",
-    "clients": "Clients",
-    "contact": "Contact",
-    "tagline": "Innovation Via Neuron - We build a culture where technology is the drive",
-    "itpark": "IT Park Uzbekistan Residents"
+    "tagline": "Future technologies — today",
+    "rights": "© 2024 IVN Labs. All rights reserved.",
+    "itpark": "IT Park Uzbekistan Resident",
+    "colServices": "Services",
+    "colCompany": "Company",
+    "colContact": "Contact",
+    "s1": "1C Integration",
+    "s2": "Web Development",
+    "s3": "CRM",
+    "s4": "AI Agents",
+    "s5": "BI Analytics",
+    "c1": "About",
+    "c2": "Products",
+    "c3": "Projects",
+    "c4": "Contact"
   }
 }

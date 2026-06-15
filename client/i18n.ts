@@ -1,13 +1,14 @@
-import {notFound} from 'next/navigation';
-import {getRequestConfig} from 'next-intl/server';
+import { getRequestConfig } from 'next-intl/server';
+import { routing } from './routing';
 
-export const locales = ['ru', 'uz', 'en'] as const;
-export type Locale = (typeof locales)[number];
-
-export default getRequestConfig(async ({locale}) => {
-  if (!locales.includes(locale as Locale)) notFound();
-
+export default getRequestConfig(async ({ requestLocale }) => {
+  const locale = await requestLocale;
+  if (!locale || !routing.locales.includes(locale as any)) {
+    const { notFound } = await import('next/navigation');
+    notFound();
+  }
   return {
-    messages: (await import(`./messages/${locale}.json`)).default
+    locale,
+    messages: (await import(`./messages/${locale}.json`)).default,
   };
 });
